@@ -1,27 +1,12 @@
 preset: package
 
-namespace: VendorName\Skeleton
-user-auth-provider: App\User
+namespace: Dyrynda\Defibrillator
 
 paths:
   src: src
-  resource: resources
-
-factory:
-  path: database/factories
-
-migration:
-  path: database/migrations
-  prefix: ''
-
-console:
-  namespace: VendorName\Skeleton\Commands
-
-model:
-  namespace: VendorName\Skeleton\Models
 
 provider:
-  namespace: VendorName\Skeleton\Providers
+  namespace: Dyrynda\Defibrillator\Providers
 
 testing:
-  namespace: VendorName\Skeleton\Tests
+  namespace: Dyrynda\Defibrillator\Tests
