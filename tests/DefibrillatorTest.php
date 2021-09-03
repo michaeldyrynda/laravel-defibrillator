@@ -10,11 +10,11 @@ use Illuminate\Support\Facades\Date;
 uses(TestCase::class);
 
 it('correctly identifies the heart to defibrillate', function () {
-    expect(new Artisan)->heart()->toBe('Artisan');
+    expect(new Artisan())->heart()->toBe('Artisan');
 });
 
 it('checks that a pulse exists', function () {
-    expect($class = new Artisan)->hasPulse()->toBeFalse();
+    expect($class = new Artisan())->hasPulse()->toBeFalse();
 
     Cache::put('Artisan', now()->addSeconds(10));
 
@@ -24,7 +24,7 @@ it('checks that a pulse exists', function () {
 it('checks that a pulse has normal rhythm', function () {
     Date::setTestNow();
 
-    expect($class = new Artisan)->hasNormalRhythm()->toBeFalse();
+    expect($class = new Artisan())->hasNormalRhythm()->toBeFalse();
 
     Cache::put('Artisan', now()->addSeconds(10));
 
@@ -38,7 +38,7 @@ it('checks that a pulse has normal rhythm', function () {
 it('checks that a pulse has an abnormal rhythm', function () {
     Date::setTestNow();
 
-    expect($class = new Artisan)->hasAbnormalRhythm()->toBeTrue();
+    expect($class = new Artisan())->hasAbnormalRhythm()->toBeTrue();
 
     Cache::put('Artisan', now()->addSeconds(10));
 
@@ -52,7 +52,7 @@ it('checks that a pulse has an abnormal rhythm', function () {
 it('can defibrillate a heart', function () {
     Date::setTestNow(Date::now()->startOfSecond());
 
-    expect($class = new Artisan)->hasPulse()->toBeFalse();
+    expect($class = new Artisan())->hasPulse()->toBeFalse();
 
     $class->defibrillate();
 
@@ -76,7 +76,7 @@ it('can defibrillate a heart', function () {
 it('can set the intrabeat interval', function () {
     Date::setTestNow(Date::now()->startOfSecond());
 
-    $class = new class {
+    $class = new class() {
         use Defibrillator;
 
         public function interval(): int
@@ -111,7 +111,7 @@ it('falls back to configured intrabeat interval', function () {
 
     Config::set('defibrillator.interval', 30);
 
-    expect($class = new Artisan)->hasPulse()->toBeFalse();
+    expect($class = new Artisan())->hasPulse()->toBeFalse();
 
     $class->defibrillate();
 
