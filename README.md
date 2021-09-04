@@ -9,6 +9,21 @@
 
 Laravel Defibrillator helps you ensure that aspects of your application that should be running at a regular interval are doing so.
 
+## Installation
+
+You can install the package via composer:
+
+```bash
+composer require dyrynda/laravel-defibrillator
+```
+
+You can publish the config file with:
+```bash
+php artisan vendor:publish --provider="Dyrynda\Defibrillator\DefibrillatorServiceProvider" --tag="laravel-defibrillator-config"
+```
+
+## Usage
+
 When an abnormal heartbeat rhythm is detected, you can defibrillate your heart to get back to normalcy.
 
 ```php
@@ -136,21 +151,6 @@ class Artisan
 ## Support development
 
 If you would like to support the on going maintenance and development of this package, please consider [sponsoring me on GitHub](https://github.com/sponsors/dyrynda).
-
-## Installation
-
-You can install the package via composer:
-
-```bash
-composer require dyrynda/laravel-defibrillator
-```
-
-You can publish the config file with:
-```bash
-php artisan vendor:publish --provider="Dyrynda\Defibrillator\DefibrillatorServiceProvider" --tag="laravel-defibrillator-config"
-```
-
-## Usage
 
 ## Testing
 
