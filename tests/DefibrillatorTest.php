@@ -131,7 +131,7 @@ it('falls back to configured intrabeat interval', function () {
 it('can override the heart name', function () {
     Date::setTestNow(Date::now()->startOfSecond());
 
-    $class = new class {
+    $class = new class() {
         use Defibrillator;
 
         public function heart(): string
