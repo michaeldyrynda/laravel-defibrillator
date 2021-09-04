@@ -127,3 +127,20 @@ it('falls back to configured intrabeat interval', function () {
         ->hasNormalRhythm()->toBeFalse()
         ->hasAbnormalRhythm()->toBeTrue();
 });
+
+it('can override the heart name', function () {
+    Date::setTestNow(Date::now()->startOfSecond());
+
+    $class = new class {
+        use Defibrillator;
+
+        public function heart(): string
+        {
+            return 'PorcelainHeart';
+        }
+    };
+
+    $class->defibrillate();
+
+    expect(Cache::get('PorcelainHeart'))->toEqual(Date::now()->addSeconds(90));
+});
