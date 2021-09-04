@@ -106,6 +106,7 @@ public function handle()
   $this->defibrillate();
 +
 + Cache::forget("{$this->heart()}:skipped");
+}
 ```
 
 This way, if you have 3 consecutive defibrillations, you can dispatch an email, SMS, Slack, whatever notification to get on the case!
