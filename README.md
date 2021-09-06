@@ -1,8 +1,8 @@
 ![Laravel Defibrillator](.github/logo.png)
 
-# Ensure your Laravel applications keep a normal pulse
+# Ensure your Laravel applications keep a normal rhythm
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/dyrynda/laravel-defibrillator.svg?style=flat-square)](https://packagist.org/packages/dyrynda/laravel-defibrillator)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/michaeldyrynda/laravel-defibrillator.svg?style=flat-square)](https://packagist.org/packages/dyrynda/laravel-defibrillator)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/michaeldyrynda/laravel-defibrillator/run-tests?label=tests)](https://github.com/michaeldyrynda/laravel-defibrillator/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/michaeldyrynda/laravel-defibrillator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/michaeldyrynda/laravel-defibrillator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/dyrynda/laravel-defibrillator.svg?style=flat-square)](https://packagist.org/packages/dyrynda/laravel-defibrillator)
