@@ -38,7 +38,7 @@ if ($this->hasAbnormalRhythm()) {
 
 ## What on Earth?
 
-Consider a scheduled task that communications with your application users on a regular interval.
+Consider a scheduled task that communicates with your application users on a regular interval.
 
 This scheduled task queues notifications to your users based on some condition within your application.
 
