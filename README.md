@@ -40,13 +40,13 @@ if ($this->hasAbnormalRhythm()) {
 
 Consider a scheduled task that communicates with your application users on a regular interval.
 
-This scheduled task queues notifications to your users based on some condition within your application.
+This scheduled task queues notifies your users based on some condition within your application.
 
 In a normal situation, there is a handful of notifications to go out, and they are dispatched with in a few seconds.
 
 But an application error causes your application to spiral out of control.
 
-Queued notifiations back up, your database is not being updated to flag notifications as having been sent, your error tracker floods with exceptions.
+Queued notifications back up, your database is not being updated to flag notifications as having been sent, your error tracker floods with exceptions.
 
 And then your scheduled task runs again.
 
