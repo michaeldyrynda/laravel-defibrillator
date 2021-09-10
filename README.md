@@ -40,7 +40,7 @@ if ($this->hasAbnormalRhythm()) {
 
 Consider a scheduled task that communicates with your application users on a regular interval.
 
-This scheduled task queues notifies your users based on some condition within your application.
+This scheduled task queues notifications to your users based on some condition within your application.
 
 In a normal situation, there is a handful of notifications to go out, and they are dispatched with in a few seconds.
 
