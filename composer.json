@@ -47,7 +47,7 @@
     "scripts": {
         "lint": "./vendor/bin/php-cs-fixer fix",
         "test:lint": "./vendor/bin/php-cs-fixer fix --dry-run",
-        "test:suite": "./vendor/bin/pest --parallel",
+        "test:suite": "./vendor/bin/pest",
         "test:types": "./vendor/bin/phpstan analyse --ansi --memory-limit=-1",
         "test": [
             "@test:lint",
