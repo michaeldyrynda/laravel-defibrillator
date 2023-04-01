@@ -16,20 +16,19 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/cache": "^9.2",
-        "illuminate/config": "^9.2",
-        "illuminate/contracts": "^9.2",
-        "illuminate/support": "^9.2"
+        "illuminate/cache": "^10.0",
+        "illuminate/config": "^10.0",
+        "illuminate/contracts": "^10.0",
+        "illuminate/support": "^10.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.1",
-        "nunomaduro/collision": "^6.0",
-        "orchestra/canvas": "^7.0",
-        "orchestra/testbench": "^7.0",
-        "pestphp/pest": "^1.18",
-        "pestphp/pest-plugin-parallel": "^1.0",
+        "nunomaduro/collision": "^7.0",
+        "orchestra/canvas": "^8.0",
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^2.0",
         "phpstan/phpstan": "^0.12.98",
         "spatie/laravel-ray": "^1.28",
         "symfony/var-dumper": "^6.0"
